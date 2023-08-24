@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Hotel Swan</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="sidebar">
+                <header class="toggle">
+                    <div class="logo">
+                        <img src="https://img.freepik.com/vecteurs-libre/degrade-illustration-oiseau-colore_343694-1741.jpg?w=1800&t=st=1692795695~exp=1692796295~hmac=4b409c21f4c96bb0b27059f9422b5bafae2c4b12ec6581fee95c267955d021b9"
+                            alt="Hotel Swan Logo">
+                        <h2><span class="danger">Hotel </span>Swan</h2>
+                    </div>
+                    <button class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </button>
+                </header>
+                <nav class="menu">
+                    <a href="#" class="active">
+                        <span class="material-icons-sharp">
+                            insert_chart_outlined
+                        </span>
+                        <h3>Overview</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            calendar_month
+                        </span>
+                        <h3>Calendar</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            key
+                        </span>
+                        <h3>Booking</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            account_balance_wallet
+                        </span>
+                        <h3>Earnings</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            people
+                        </span>
+                        <h3>Stuff</h3>
+                    </a>
+                    <a href="#" class="settings">
+                        <span class="material-icons-sharp">
+                            settings
+                        </span>
+                        <h3>Settings</h3>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Section -->
+        <main>
+            <div class="main-container">
+                <!-- Search Bar Section -->
+                <div class="search-bar">
+                    <div class="search-content">
+                        <span class="material-icons-sharp">search</span>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="divider"></div>
+                </div>
+                <!-- End of Search Bar Section -->
+
+                <!-- Title Section -->
+                <h1 class="title">Welcome, <span class="danger">Williams</span></h1>
+                <p>You have <u>9 free rooms</u> at Saint-Denis</p>
+                <!-- End of Title Section -->
+                <div class="main-section">
+                    <!-- Cards Section -->
+                    <div class="analyse">
+                        <div class="st-denis">
+                            <div class="card">
+                                <span class="material-icons-sharp">
+                                    north
+                                </span>
+                                <h1>4%</h1>
+                                <div class="info">
+                                    <div class="booking">
+                                        <h2>31</h2>
+                                        <small>Booking</small>
+                                    </div>
+                                    <div class="check-in">
+                                        <h2>19</h2>
+                                        <small>Check In</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Saint-Denis</p>
+                        </div>
+                        <div class="blackwater">
+                            <div class="card">
+                                <span class="material-icons-sharp">
+                                    south
+                                </span>
+                                <h1>6%</h1>
+                                <div class="info">
+                                    <div class="booking">
+                                        <h2>8</h2>
+                                        <small>Booking</small>
+                                    </div>
+                                    <div class="check-in">
+                                        <h2>5</h2>
+                                        <small>Check In</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Blackwater</p>
+                        </div>
+                        <div class="new-object">
+                            <span class="material-icons-sharp">
+                                add
+                            </span>
+                            <h3>Add new object</h3>
+                        </div>
+                    </div>
+                    <!-- End of Card Section-->
+                    <!-- Chart Section -->
+                    <div class="chart-container">
+                        <div class="header">
+                            <h3>Object overview</h3>
+                            <div class="btn">
+                                <button class="btn-overview">
+                                    <p>Overview</p>
+                                </button>
+                                <button class="btn-date">
+                                    <p>Nov 15 - Nov 20</p>
+                                    <span class="material-icons-sharp">
+                                        expand_more
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <canvas id="myLineChart"></canvas>
+                    </div>
+                    <!-- End of Chart Section -->
+                </div>
+            </div>
+        </main>
+        <!-- End of Main Section -->
+
+        <!-- Right Section-->
+        <div class="right-section">
+            <div class="nav">
+                <div class="nav-content">
+                    <button class="open" id="menu-btn">
+                        <span class="material-icons-sharp">
+                            menu
+                        </span>
+                    </button>
+                    <button class="notifications">
+                        <span class="material-icons-sharp">
+                            notifications_none
+                        </span>
+                    </button>
+                    <div class="profile">
+                        <h3>William Dawson</h3>
+                        <div class="profile-photo">
+                            <img
+                                src="https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-section">
+                    <div class="booking-content">
+                        <img
+                            src="https://img.freepik.com/photos-gratuite/paysage-urbain-ensoleille_23-2149504786.jpg?w=1380&t=st=1692871525~exp=1692872125~hmac=f787f15f2ff2c0851f70a402887d358d6544e29852a728d2af5b9c91ed2db7b4">
+                        <div class="title">
+                            <h3>Booking List</h3>
+                            <button class="btn">
+                                <span class="material-icons-sharp">
+                                    more_horiz
+                                </span>
+                        </div>
+                        <div class="status">
+                            <div class="status-profile">
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://img.freepik.com/photos-gratuite/portrait-souriant-charmant-jeune-homme-t-shirt-gris-se-tenant-fond-uni_23-2148213406.jpg?w=1800&t=st=1692873607~exp=1692874207~hmac=e6fa83a22e3d79e7af807ae76c2c949ff3078024423ca63506388e79d1291078">
+                                </div>
+                                <div class="status-info">
+                                    <h3>Wade Warren</h3>
+                                    <div class="status-param">
+                                        <small>#SGL</small>
+                                        <small>0 guests</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-paid">
+                                <p>01.12 - 01.14</p>
+                                <p>Paid</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+
+                        <div class="status">
+                            <div class="status-profile">
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://img.freepik.com/photos-gratuite/vue-face-homme-souriant-exterieur-dans-ville_23-2148955558.jpg?w=1380&t=st=1692874957~exp=1692875557~hmac=8391e04fd05b0434e79bc88f3320667e3fc0455653af95a2d5eacb6e40089212">
+                                </div>
+                                <div class="status-info">
+                                    <h3>Jacob Jones</h3>
+                                    <div class="status-param">
+                                        <small>#QDPL</small>
+                                        <small>3 guests</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-pending">
+                                <p>01.12 - 01.14</p>
+                                <p>Pending</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="status">
+                            <div class="status-profile">
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://img.freepik.com/photos-gratuite/portrait-jolie-jeune-femme-foret-femme-caucasienne-aux-cheveux-noirs-aux-yeux-verts-souriant-camera-portrait-nature-concept-beaute_74855-23456.jpg?w=1380&t=st=1692875047~exp=1692875647~hmac=a2fa71d943a4f7bbb27140d9ffcd6b7cc446693d621550f2aad5f8a43f822fc6">
+                                </div>
+                                <div class="status-info">
+                                    <h3>Kathryn Murphy</h3>
+                                    <div class="status-param">
+                                        <small>#DBL</small>
+                                        <small>1 guests</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-paid">
+                                <p>01.12 - 01.14</p>
+                                <p>Paid</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="status">
+                            <div class="status-profile">
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://img.freepik.com/photos-gratuite/homme-gai-regardant-camera_23-2147800015.jpg?w=1380&t=st=1692875067~exp=1692875667~hmac=22e06bf3668e3198dc75f7d7f4768aeede0c19e5134da61dde282ec6f63a807a">
+                                </div>
+                                <div class="status-info">
+                                    <h3>John Doe</h3>
+                                    <div class="status-param">
+                                        <small>#OXJ</small>
+                                        <small>0 guests</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="status-paid">
+                                <p>01.12 - 01.14</p>
+                                <p>Paid</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="active">View all</h3>
+                </div>
+                <div class="premium-section">
+                    <h3>UNLOCK NEW FEATURES</h3>
+                    <button class="btn-pro">
+                        Get Pro Now
+                        <span class="material-icons-sharp">
+                            lock_open
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End of Right Section-->
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
