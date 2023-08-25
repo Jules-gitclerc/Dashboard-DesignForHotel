@@ -13,4 +13,3 @@ Here we have project screenshot :
   Booking Dashboard</a> by Surfy (<a href="https://codepen.io/Surfy971">@Surfy971</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
